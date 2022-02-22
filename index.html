@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BTA-Kochen - Die besten Rezepte</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
       <a href="index.html=">
-      <img src="img/logo.png"  alt="Bta Kochen" height="40">
-  </a>
-  <button>
-      <img src="img/menu.svg" alt="Menu" height="40"/>
-  </button>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a>
-        </li>
-        <li><a href="#">Rezepte</a>
-        </li>
-        <li><a href="#">Kategorien</a>
-        </li>
-        <li><a href="#">Kontakt</a>
-        </li>
+        <img src="img/logo.png" alt="Bta Kochen" height="40" />
+      </a>
+      <button id="menu-button">
+        <img src="img/menu.svg" alt="Menu" height="40" />
+      </button>
+      <nav id="menu-oben">
+        <ul id="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Rezepte</a></li>
+          <li><a href="#">Kategorien</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <section id="hero">
+        <div>
+          <h1>Die besten Rezepte für Webworker</h1>
+          <h2>Es gibt mehr als Pizza & Ravioli</h2>
+          <a href="#" class="button">Entdecke die Leckereien</a>
+        </div>
+      </section>
+      <section id="recepies">
+        <h2>Die neuesten Rezepte</h2>
+        <div class="row">
+          <div class="card">
+            <img src="img/burger.jpg" alt="Burger" />
+            <h3>Total leckere Burger</h3>
+            <p>ganz einfach zu machen</p>
+            <a href="#" class="button blue">Zum Rezept</a>
+          </div>
+          <div class="card">
+            <img src="img/burger.jpg" alt="Burger" />
+            <h3>Total leckere Burger</h3>
+            <p>ganz einfach zu machen</p>
+            <a href="#" class="button blue">Zum Rezept</a>
+          </div>
+          <div class="card">
+            <img src="img/burger.jpg" alt="Burger" />
+            <h3>Total leckere Burger</h3>
+            <p>ganz einfach zu machen</p>
+            <a href="#" class="button blue">Zum Rezept</a>
+        </div>
+        <div class="card">
+            <img src="img/burger.jpg" alt="Burger" />
+            <h3>Total leckere Burger</h3>
+            <p>ganz einfach zu machen</p>
+            <a href="#" class="button blue">Zum Rezept</a>
+      </section>
+    </main>
 
-    </ul>
-</nav>
-  </header>  
-</body>
+    <script src="js/menu.js"></script>
+  </body>
 </html>

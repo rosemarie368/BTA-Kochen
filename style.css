@@ -7,10 +7,10 @@ html {
   width: 100%;
   line-height: 1.4;
   color: #000;
+  background: #ffffff;
 }
 body {
   margin: 0;
-  background: #ffffff;
 }
 
 a {
@@ -19,7 +19,9 @@ a {
   font-weight: bold;
   text-transform: uppercase;
 }
-
+a:hover {
+  color: aquamarine;
+}
 ul {
   list-style-type: none;
   margin: 0%;
@@ -29,4 +31,77 @@ ul {
 button {
   background-color: #ffffff;
   border: 0;
+}
+
+header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+#menu-oben {
+  display: none;
+}
+#menu-oben.show {
+  display: block;
+}
+#hero {
+  background-image: url(img/intro.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #374a67;
+  border: 1px solid #374a67;
+  padding: 10px;
+  font-weight: normal;
+  border-radius: 5px;
+  margin-top: 32px;
+  display: inline-block;
+  transition: all 0.4s;
+}
+.button:hover {
+  background-color: #374a67;
+  color: #ffffff;
+}
+.card {
+  text-align: center;
+  margin: 16px;
+  box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.card img {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  #menu-oben {
+    display: block;
+  }
+
+  #menu-button {
+    display: none;
+  }
+  #menu-list {
+    display: flex;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  .row {
+    display: flex;
+  }
 }
