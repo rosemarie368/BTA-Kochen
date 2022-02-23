@@ -79,11 +79,43 @@ header {
   text-align: center;
   margin: 16px;
   box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .card img {
   width: 100%;
 }
+
+.button.blue{
+  background-color:#374a67;
+  color: #ffffff;
+
+}
+
+.button.blue:hover{
+  background-color: #ffffff;
+  color: #374a67;
+}
+
+h2{
+  text-align: center;
+}
+
+#newsletter{
+  background-color: #04122b;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+#email{
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
 
 @media (min-width: 1024px) {
   #menu-oben {
@@ -104,4 +136,10 @@ header {
   .row {
     display: flex;
   }
+
+
+#nebeneinander {
+  display: flex;
+}
+
 }
