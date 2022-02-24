@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', sans-serif;
   width: 100%;
   line-height: 1.4;
   color: #000;
@@ -12,7 +12,9 @@ html {
 body {
   margin: 0;
 }
-
+h2{
+  font-weight: 500;
+}
 a {
   color: #000;
   text-decoration: none;
@@ -40,6 +42,9 @@ header {
   align-items: center;
   padding-left: 32px;
   padding-right: 32px;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 #menu-oben {
@@ -47,6 +52,12 @@ header {
 }
 #menu-oben.show {
   display: block;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  left: 0;
+  top: 64px;
+  text-align: center;
 }
 #hero {
   background-image: url(img/intro.jpg);
